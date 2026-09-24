@@ -67,11 +67,15 @@ export default function Home() {
             <p>Essays and research notes will gather here.</p>
           </div>
           <div className="entry-list">
-            <article className="entry">
+            <a
+              className="entry entry-link"
+              href="/writing/development-for-the-public/"
+              aria-label="Read Development for the Public"
+            >
               <span className="entry-type">Essay</span>
-              <h3>How the city enters everyday life</h3>
-              <span className="entry-status">Coming soon</span>
-            </article>
+              <h3>Development for the Public?</h3>
+              <span className="entry-status">Read essay <span aria-hidden="true">→</span></span>
+            </a>
             <article className="entry">
               <span className="entry-type">Research note</span>
               <h3>Questions toward a city for everyone</h3>
