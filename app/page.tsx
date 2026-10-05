@@ -2,7 +2,6 @@ const sections = [
   { label: "Writing", href: "#writing" },
   { label: "About Sarah", href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "Notes", href: "#notes" },
 ];
 
 export default function Home() {
@@ -33,7 +32,7 @@ export default function Home() {
               I follow questions about how people and cities continually make
               one another—and how we might create cities that belong to everyone.
             </p>
-            <a href="#about">Follow the thread <span aria-hidden="true">↓</span></a>
+            <a href="#writing">Follow the thread <span aria-hidden="true">↓</span></a>
           </div>
         </div>
         <div className="city-line" aria-hidden="true">
@@ -50,23 +49,31 @@ export default function Home() {
         <div className="section-body">
           <div className="section-heading">
             <h2 id="writing-title">Writing</h2>
-            <p>Essays and research notes will gather here.</p>
+            <p>Essays on housing, displacement, and the politics of urban change.</p>
           </div>
-          <div className="entry-list">
+          <div className="writing-grid">
             <a
-              className="entry entry-link"
+              className="writing-card"
               href="/writing/development-for-the-public/"
               aria-label="Read Development for the Public"
             >
-              <span className="entry-type">Essay</span>
-              <h3>Development for the Public?</h3>
-              <span className="entry-status">Read essay <span aria-hidden="true">→</span></span>
+              <div className="writing-card-image">
+                <img
+                  src="/writing/development-for-the-public/ahyeon-new-town-aerial.gif"
+                  alt="Aerial view outlining the Ahyeon New Town redevelopment area in Seoul"
+                />
+                <span className="writing-card-type">Essay · 2026</span>
+              </div>
+              <div className="writing-card-copy">
+                <h3>Development for the Public?</h3>
+                <p>
+                  An examination of state-led redevelopment in Seoul’s Ahyeon New
+                  Town through rent-gap theory and the revanchist city, tracing
+                  displacement, renter exclusion, and the multidimensional loss of home.
+                </p>
+                <span className="writing-card-link">Read essay <span aria-hidden="true">→</span></span>
+              </div>
             </a>
-            <article className="entry">
-              <span className="entry-type">Research note</span>
-              <h3>Questions toward a city for everyone</h3>
-              <span className="entry-status">Coming soon</span>
-            </article>
           </div>
         </div>
       </section>
@@ -74,17 +81,34 @@ export default function Home() {
       <section className="section about" id="about" aria-labelledby="about-title">
         <div className="section-index">02 / About</div>
         <div className="section-body about-grid">
-          <h2 id="about-title">A personal inquiry into collective life.</h2>
-          <div className="prose">
+          <div>
+            <h2 id="about-title">Researching how housing shapes social life.</h2>
+            <dl className="about-facts">
+              <div><dt>Based in</dt><dd>New York City</dd></div>
+              <div><dt>Education</dt><dd>MS Urban Planning, Columbia GSAPP</dd></div>
+              <div><dt>Focus</dt><dd>Housing, inequality, and urban change</dd></div>
+            </dl>
+          </div>
+          <div className="prose about-copy">
             <p>
-              I am Sarah Kim, a researcher interested in the intimate relationship
-              between cities and everyday life. I look at the ordinary spaces,
-              systems, and stories through which urban life becomes visible.
+              I am Sarah Kim, an urban researcher whose work examines how housing
+              systems produce social stratification, class identity, and unequal
+              experiences of belonging. I earned a Master of Science in Urban
+              Planning from Columbia University’s Graduate School of Architecture,
+              Planning and Preservation.
             </p>
             <p>
-              This site is a home for writing, projects, and notes in progress—my
-              own threads of questions toward understanding our cities and imagining
-              more generous ones for everyone.
+              My research focuses on Seoul and brings together qualitative interviews,
+              spatial analysis, and digital discourse analysis. My master’s thesis,
+              <i> Beyond Shelter</i>, studied Korean apartment complexes as both
+              material housing and a symbolic mechanism through which middle-class
+              identity and social inequality are produced.
+            </p>
+            <p>
+              Alongside research, I have worked across public-sector capital planning,
+              cultural programming, and large-scale energy projects. These experiences
+              shape my interest in the institutions, policies, and everyday relationships
+              through which cities are built—and in how they might serve more people.
             </p>
           </div>
         </div>
@@ -95,30 +119,20 @@ export default function Home() {
         <div className="section-body">
           <div className="section-heading">
             <h2 id="projects-title">Projects</h2>
-            <p>Ongoing investigations, visual stories, and collaborative work.</p>
+            <p>Research, design explorations, and collaborative work.</p>
           </div>
-          <div className="project-placeholder">
-            <span>Now taking shape</span>
-            <p>
-              A first collection of projects is on its way. In the meantime, this
-              space holds the questions that connect them: who shapes the city,
-              whose lives it supports, and what other futures it might hold.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section" id="notes" aria-labelledby="notes-title">
-        <div className="section-index">04 / Notes</div>
-        <div className="section-body">
-          <div className="section-heading">
-            <h2 id="notes-title">Field notes</h2>
-            <p>Small observations collected along the way.</p>
-          </div>
-          <div className="notes-grid">
-            <article><span>On looking</span><p>What becomes visible when we slow down in familiar places?</p></article>
-            <article><span>On belonging</span><p>How does a city tell us who and what it was made for?</p></article>
-            <article><span>On possibility</span><p>Everyday life is where another urban future begins.</p></article>
+          <div className="project-card" aria-label="Middle Housing Competition project">
+            <div className="project-visual" aria-hidden="true">
+              <span /><span /><span /><span /><span />
+            </div>
+            <div className="project-copy">
+              <span className="project-type">Design competition · Middle housing</span>
+              <h3>Middle Housing Competition</h3>
+              <p>
+                A dedicated space for the proposal, drawings, research, and design
+                process. Project materials will be added here.
+              </p>
+            </div>
           </div>
         </div>
       </section>
