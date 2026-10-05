@@ -99,7 +99,7 @@ h1 {
   max-width: 1040px;
   margin-bottom: 0;
   font-family: var(--serif);
-  font-size: clamp(4rem, 7vw, 7.4rem);
+  font-size: clamp(3.4rem, 5.8vw, 6rem);
   font-weight: 400;
   line-height: 0.94;
   letter-spacing: -0.055em;
@@ -457,7 +457,7 @@ footer > a { border-bottom: 1px solid #d58d7c; padding-bottom: 3px; }
   nav a { font-size: 0.62rem; }
   .hero { min-height: auto; padding: 56px 0 40px; }
   .eyebrow { margin-bottom: 30px; }
-  h1 { font-size: clamp(3.1rem, 16vw, 4.7rem); }
+  h1 { font-size: clamp(2.75rem, 12.5vw, 3.8rem); }
   .city-line { margin-top: 48px; }
   .section-heading { display: block; margin-bottom: 42px; }
   .section-heading p { margin-top: 20px; }
