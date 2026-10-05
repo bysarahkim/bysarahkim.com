@@ -1,4 +1,9 @@
-const sections = ["About", "Writing", "Projects", "Notes"];
+const sections = [
+  { label: "Writing", href: "#writing" },
+  { label: "About Sarah", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Notes", href: "#notes" },
+];
 
 export default function Home() {
   return (
@@ -9,8 +14,8 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           {sections.map((section) => (
-            <a key={section} href={`#${section.toLowerCase()}`}>
-              {section}
+            <a key={section.href} href={section.href}>
+              {section.label}
             </a>
           ))}
         </nav>
@@ -20,7 +25,7 @@ export default function Home() {
         <p className="eyebrow">Urban research · everyday life</p>
         <div className="hero-grid">
           <h1 id="hero-title">
-            Cities shape our everyday lives. We shape them in return.
+            We build Cities and they shape our everyday lives, relationships, and societies. 
           </h1>
           <div className="hero-note">
             <span className="note-number">01</span>
@@ -40,27 +45,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section about" id="about" aria-labelledby="about-title">
-        <div className="section-index">01 / About</div>
-        <div className="section-body about-grid">
-          <h2 id="about-title">A personal inquiry into collective life.</h2>
-          <div className="prose">
-            <p>
-              I am Sarah Kim, a researcher interested in the intimate relationship
-              between cities and everyday life. I look at the ordinary spaces,
-              systems, and stories through which urban life becomes visible.
-            </p>
-            <p>
-              This site is a home for writing, projects, and notes in progress—my
-              own threads of questions toward understanding our cities and imagining
-              more generous ones for everyone.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="section" id="writing" aria-labelledby="writing-title">
-        <div className="section-index">02 / Writing</div>
+        <div className="section-index">01 / Writing</div>
         <div className="section-body">
           <div className="section-heading">
             <h2 id="writing-title">Writing</h2>
@@ -81,6 +67,25 @@ export default function Home() {
               <h3>Questions toward a city for everyone</h3>
               <span className="entry-status">Coming soon</span>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section about" id="about" aria-labelledby="about-title">
+        <div className="section-index">02 / About</div>
+        <div className="section-body about-grid">
+          <h2 id="about-title">A personal inquiry into collective life.</h2>
+          <div className="prose">
+            <p>
+              I am Sarah Kim, a researcher interested in the intimate relationship
+              between cities and everyday life. I look at the ordinary spaces,
+              systems, and stories through which urban life becomes visible.
+            </p>
+            <p>
+              This site is a home for writing, projects, and notes in progress—my
+              own threads of questions toward understanding our cities and imagining
+              more generous ones for everyone.
+            </p>
           </div>
         </div>
       </section>
