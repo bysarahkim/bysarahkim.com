@@ -1,6 +1,6 @@
 const sections = [
-  { label: "Writing", href: "#writing" },
   { label: "About Sarah", href: "#about" },
+  { label: "Writing", href: "#writing" },
   { label: "Projects", href: "#projects" },
 ];
 
@@ -94,7 +94,7 @@ const writingItems = [
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
+      <header className="site-header" id="top">
         <a className="wordmark" href="#top" aria-label="Sarah Kim, home">
           Sarah Kim
         </a>
@@ -107,32 +107,44 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="hero" id="top" aria-labelledby="hero-title">
-        <p className="eyebrow">Urban research · everyday life</p>
-        <div className="hero-grid">
-          <h1 id="hero-title">
-            We build Cities and they shape our everyday lives, relationships, and societies. 
-          </h1>
-          <div className="hero-note">
-            <span className="note-number">01</span>
-            <p>
-              I follow questions about how people and cities continually make
-              one another—and how we might create cities that belong to everyone.
-            </p>
-            <a href="#writing">Follow the thread <span aria-hidden="true">↓</span></a>
+      <section className="section about" id="about" aria-labelledby="about-title">
+        <div className="section-index">01 / About</div>
+        <div className="section-body about-grid">
+          <div>
+            <h2 id="about-title">Researching how housing shapes social life.</h2>
+            <dl className="about-facts">
+              <div><dt>Based in</dt><dd>New York City</dd></div>
+              <div><dt>Education</dt><dd>MS Urban Planning, Columbia GSAPP</dd></div>
+              <div><dt>Focus</dt><dd>Housing, inequality, and urban change</dd></div>
+            </dl>
           </div>
-        </div>
-        <div className="city-line" aria-hidden="true">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
+          <div className="prose about-copy">
+            <p>
+              I am Sarah Kim, an urban researcher whose work examines how housing
+              systems produce social stratification, class identity, and unequal
+              experiences of belonging. I earned a Master of Science in Urban
+              Planning from Columbia University’s Graduate School of Architecture,
+              Planning and Preservation.
+            </p>
+            <p>
+              My research focuses on Seoul and brings together qualitative interviews,
+              spatial analysis, and digital discourse analysis. My master’s thesis,
+              <i> Beyond Shelter</i>, studied Korean apartment complexes as both
+              material housing and a symbolic mechanism through which middle-class
+              identity and social inequality are produced.
+            </p>
+            <p>
+              Alongside research, I have worked across public-sector capital planning,
+              cultural programming, and large-scale energy projects. These experiences
+              shape my interest in the institutions, policies, and everyday relationships
+              through which cities are built—and in how they might serve more people.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="section" id="writing" aria-labelledby="writing-title">
-        <div className="section-index">01 / Writing</div>
+        <div className="section-index">02 / Writing</div>
         <div className="section-body">
           <div className="section-heading">
             <h2 id="writing-title">Writing</h2>
@@ -165,42 +177,6 @@ export default function Home() {
                 </div>
               </a>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section about" id="about" aria-labelledby="about-title">
-        <div className="section-index">02 / About</div>
-        <div className="section-body about-grid">
-          <div>
-            <h2 id="about-title">Researching how housing shapes social life.</h2>
-            <dl className="about-facts">
-              <div><dt>Based in</dt><dd>New York City</dd></div>
-              <div><dt>Education</dt><dd>MS Urban Planning, Columbia GSAPP</dd></div>
-              <div><dt>Focus</dt><dd>Housing, inequality, and urban change</dd></div>
-            </dl>
-          </div>
-          <div className="prose about-copy">
-            <p>
-              I am Sarah Kim, an urban researcher whose work examines how housing
-              systems produce social stratification, class identity, and unequal
-              experiences of belonging. I earned a Master of Science in Urban
-              Planning from Columbia University’s Graduate School of Architecture,
-              Planning and Preservation.
-            </p>
-            <p>
-              My research focuses on Seoul and brings together qualitative interviews,
-              spatial analysis, and digital discourse analysis. My master’s thesis,
-              <i> Beyond Shelter</i>, studied Korean apartment complexes as both
-              material housing and a symbolic mechanism through which middle-class
-              identity and social inequality are produced.
-            </p>
-            <p>
-              Alongside research, I have worked across public-sector capital planning,
-              cultural programming, and large-scale energy projects. These experiences
-              shape my interest in the institutions, policies, and everyday relationships
-              through which cities are built—and in how they might serve more people.
-            </p>
           </div>
         </div>
       </section>
