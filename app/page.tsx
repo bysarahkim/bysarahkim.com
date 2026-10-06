@@ -42,6 +42,18 @@ const writingItems = [
     pdf: true,
   },
   {
+    title: "Public Rental Housing in South Korea",
+    meta: "Essay · May 2025",
+    description:
+      "A personal and critical examination of how public rental housing is stigmatized in South Korea, and why social-mix policies struggle to undo housing-based status hierarchies.",
+    image: "/writing/library/public-rental-housing-social-mix.png",
+    imagePosition: "center",
+    alt: "Dense landscape of apartment complexes in South Korea",
+    href: "https://blog.naver.com/insight9411/223857710652",
+    action: "Read essay",
+    pdf: false,
+  },
+  {
     title: "Gentrification in Williamsburg",
     meta: "GIS research · Fall 2024",
     description:
@@ -133,8 +145,8 @@ export default function Home() {
                 href={item.href}
                 key={item.href}
                 aria-label={`${item.action}: ${item.title}`}
-                target={item.pdf ? "_blank" : undefined}
-                rel={item.pdf ? "noreferrer" : undefined}
+                target={item.pdf || item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.pdf || item.href.startsWith("http") ? "noreferrer" : undefined}
               >
                 <div className="writing-card-image">
                   <img
