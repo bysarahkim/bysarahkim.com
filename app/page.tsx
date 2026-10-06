@@ -2,6 +2,7 @@ const sections = [
   { label: "About Sarah", href: "#about" },
   { label: "Writing", href: "#writing" },
   { label: "Projects", href: "#projects" },
+  { label: "Photography", href: "#photography" },
 ];
 
 const writingItems = [
@@ -268,6 +269,87 @@ export default function Home() {
               </div>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section className="section" id="photography" aria-labelledby="photography-title">
+        <div className="section-index">04 / Photography</div>
+        <div className="section-body">
+          <div className="section-heading">
+            <h2 id="photography-title">Photography</h2>
+            <p>Architectural studies through light, material, and everyday use.</p>
+          </div>
+          <div className="photography-grid">
+            <article className="photography-card">
+              <a
+                className="photography-image"
+                href="/photography/whitney-museum-photography.pdf"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View the Whitney Museum architectural photography PDF"
+              >
+                <img
+                  src="/photography/whitney-museum.png"
+                  alt="Street-level view of the Whitney Museum of American Art"
+                />
+              </a>
+              <div className="photography-copy">
+                <div className="photography-meta">
+                  <span>Assignment 01</span>
+                  <span>Fall 2025</span>
+                </div>
+                <h3>Whitney Museum of American Art</h3>
+                <p className="photography-location">New York City</p>
+                <a
+                  className="photography-link"
+                  href="/photography/whitney-museum-photography.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View photographs <span aria-hidden="true">→</span>
+                </a>
+                <div className="photography-essay">
+                  <span>Essay</span>
+                  <p>To be continued</p>
+                </div>
+              </div>
+            </article>
+
+            <article className="photography-card">
+              <a
+                className="photography-image"
+                href="/photography/domino-sugar-photography.pdf"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View the Domino Sugar architectural photography PDF"
+              >
+                <img
+                  src="/photography/domino-sugar.png"
+                  alt="Historic Domino Sugar sign above the brick refinery building"
+                />
+              </a>
+              <div className="photography-copy">
+                <div className="photography-meta">
+                  <span>Assignment 02</span>
+                  <span>Fall 2025</span>
+                </div>
+                <h3>Domino Sugar Refinery</h3>
+                <p className="photography-location">Brooklyn, New York</p>
+                <a
+                  className="photography-link"
+                  href="/photography/domino-sugar-photography.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View photographs <span aria-hidden="true">→</span>
+                </a>
+                <div className="photography-essay">
+                  <span>Essay</span>
+                  <p>To be continued</p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
