@@ -231,6 +231,43 @@ export default function Home() {
               </div>
             </div>
           </article>
+          <article className="project-card" aria-label="Tokyo Yoyogi zoning case study project">
+            <a
+              className="project-visual"
+              href="/projects/yoyogi-zoning/yoyogi-zoning-case-study.pdf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View the Tokyo Yoyogi zoning case study PDF"
+            >
+              <img
+                src="/projects/yoyogi-zoning/yoyogi-zoning-impact.png"
+                alt="Yoyogi aerial analysis comparing floor-area ratios and height limits across two residential zones"
+              />
+            </a>
+            <div className="project-copy">
+              <span className="project-type">Individual project · Fall 2025</span>
+              <h3>Tokyo Yoyogi</h3>
+              <p className="project-subtitle">Zoning, planning law, and neighborhood form</p>
+              <div className="project-credits">
+                <p>Practicum: Residential Planning (Fall 2025)</p>
+                <p>Advisor: Katherine Dunham</p>
+              </div>
+              <p>
+                How zoning and planning law in Tokyo shaped neighborhoods in Tokyo.
+              </p>
+              <div className="project-actions">
+                <a
+                  className="project-action"
+                  href="/projects/yoyogi-zoning/yoyogi-zoning-case-study.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>Full case study</span>
+                  <span>View PDF →</span>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 

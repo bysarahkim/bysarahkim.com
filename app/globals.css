@@ -175,6 +175,8 @@ h2 {
   background: #fafafa;
 }
 
+.project-card + .project-card { margin-top: 48px; }
+
 .project-visual {
   display: block;
   overflow: hidden;
