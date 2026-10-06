@@ -4,6 +4,81 @@ const sections = [
   { label: "Projects", href: "#projects" },
 ];
 
+const writingItems = [
+  {
+    title: "Development for the Public?",
+    meta: "Essay · Spring 2026",
+    description:
+      "An examination of state-led redevelopment in Seoul’s Ahyeon New Town through rent-gap theory and the revanchist city, tracing displacement, renter exclusion, and the multidimensional loss of home.",
+    image: "/writing/development-for-the-public/ahyeon-new-town-aerial.gif",
+    imagePosition: "center",
+    alt: "Aerial view outlining the Ahyeon New Town redevelopment area in Seoul",
+    href: "/writing/development-for-the-public/",
+    action: "Read essay",
+    pdf: false,
+  },
+  {
+    title: "Closed Conversation: Woven City — Is It a City?",
+    meta: "Research essay · Fall 2025",
+    description:
+      "A critical reading of Toyota Woven City as a corporate-led smart-city testbed, examining data solutionism, AI urbanism, private governance, and its separation from the civic life around it.",
+    image: "/writing/library/closed-conversation-woven-city.png",
+    imagePosition: "center 31%",
+    alt: "First page of Closed Conversation featuring Toyota Woven City beneath Mount Fuji",
+    href: "/writing/library/closed-conversation-woven-city.pdf",
+    action: "View PDF",
+    pdf: true,
+  },
+  {
+    title: "Mapping Displacement and Gentrification",
+    meta: "Collaborative research · Spring 2025",
+    description:
+      "A machine-learning approach to classifying displacement patterns across Brooklyn, combining clustering and predictive models with Peter Marcuse’s typology of urban displacement.",
+    image: "/writing/library/mapping-displacement-and-gentrification-feature.png",
+    imagePosition: "center 78%",
+    alt: "K-means clustering map showing displacement patterns across Brooklyn",
+    href: "/writing/library/mapping-displacement-and-gentrification.pdf",
+    action: "View PDF",
+    pdf: true,
+  },
+  {
+    title: "Gentrification in Williamsburg",
+    meta: "GIS research · Fall 2024",
+    description:
+      "A longitudinal GIS analysis of how the 2005 Greenpoint–Williamsburg rezoning reshaped land use, housing, population, income, and employment across the neighborhood.",
+    image: "/writing/library/rezoning-in-williamsburg.png",
+    imagePosition: "center 62%",
+    alt: "Cover of Gentrification in Williamsburg featuring the Williamsburg Bridge",
+    href: "/writing/library/rezoning-in-williamsburg.pdf",
+    action: "View PDF",
+    pdf: true,
+  },
+  {
+    title: "Privatopia and Local Government",
+    meta: "Comparative research · Fall 2024",
+    description:
+      "A comparison of homeowners associations in the United States and apartment-complex communities in South Korea, focusing on private governance and relationships with local government.",
+    image: "/writing/library/privatopia-and-local-government-feature.png",
+    imagePosition: "center 35%",
+    alt: "Historic aerial view of the Mapo Apartment complex in Seoul",
+    href: "/writing/library/privatopia-and-local-government.pdf",
+    action: "View PDF",
+    pdf: true,
+  },
+  {
+    title: "Reconstructing the Nation and Modernizing Society",
+    meta: "Historical research · 2024",
+    description:
+      "A study of government-led housing during South Korea’s first Five-Year Economic Development Plan and its lasting effects on modernization, middle-class identity, and Seoul’s urban form.",
+    image: "/writing/library/reconstructing-the-nation-feature.png",
+    imagePosition: "center 67%",
+    alt: "Seoul skyline filled with high-rise apartment complexes",
+    href: "/writing/library/reconstructing-the-nation.pdf",
+    action: "View PDF",
+    pdf: true,
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -52,28 +127,32 @@ export default function Home() {
             <p>Essays on housing, displacement, and the politics of urban change.</p>
           </div>
           <div className="writing-grid">
-            <a
-              className="writing-card"
-              href="/writing/development-for-the-public/"
-              aria-label="Read Development for the Public"
-            >
-              <div className="writing-card-image">
-                <img
-                  src="/writing/development-for-the-public/ahyeon-new-town-aerial.gif"
-                  alt="Aerial view outlining the Ahyeon New Town redevelopment area in Seoul"
-                />
-                <span className="writing-card-type">Essay · 2026</span>
-              </div>
-              <div className="writing-card-copy">
-                <h3>Development for the Public?</h3>
-                <p>
-                  An examination of state-led redevelopment in Seoul’s Ahyeon New
-                  Town through rent-gap theory and the revanchist city, tracing
-                  displacement, renter exclusion, and the multidimensional loss of home.
-                </p>
-                <span className="writing-card-link">Read essay <span aria-hidden="true">→</span></span>
-              </div>
-            </a>
+            {writingItems.map((item) => (
+              <a
+                className="writing-card"
+                href={item.href}
+                key={item.href}
+                aria-label={`${item.action}: ${item.title}`}
+                target={item.pdf ? "_blank" : undefined}
+                rel={item.pdf ? "noreferrer" : undefined}
+              >
+                <div className="writing-card-image">
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    style={{ objectPosition: item.imagePosition }}
+                  />
+                  <span className="writing-card-type">{item.meta}</span>
+                </div>
+                <div className="writing-card-copy">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <span className="writing-card-link">
+                    {item.action} <span aria-hidden="true">→</span>
+                  </span>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
