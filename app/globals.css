@@ -189,6 +189,9 @@ h2 {
 .project-copy h3 { margin: 32px 0 8px; font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 4.4rem); font-weight: 400; line-height: 1; }
 .project-copy p { margin: 0; color: var(--taupe); }
 .project-copy .project-subtitle { margin-bottom: 30px; color: var(--terracotta); font-family: var(--serif); font-size: 1.3rem; }
+.project-credits { margin-bottom: 28px; padding: 15px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.project-credits p { font-size: 0.82rem; }
+.project-credits p + p { margin-top: 5px; }
 .project-actions { display: grid; gap: 12px; margin-top: auto; padding-top: 48px; }
 .project-action { display: flex; justify-content: space-between; gap: 20px; padding: 15px 0; border-top: 1px solid var(--rule); color: var(--terracotta); font-size: 0.76rem; letter-spacing: 0.09em; text-transform: uppercase; }
 .project-action:not(.project-action-disabled):hover { color: var(--ink); }

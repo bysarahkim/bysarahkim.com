@@ -202,9 +202,13 @@ export default function Home() {
               />
             </a>
             <div className="project-copy">
-              <span className="project-type">Middle Housing Competition · 2026</span>
+              <span className="project-type">Group project · 2026</span>
               <h3>Weave House</h3>
               <p className="project-subtitle">Mix + Connect</p>
+              <div className="project-credits">
+                <p>With Jun Seo Yoon and Kania Attaya Ulfa</p>
+                <p lang="ko">새건축사협회 중간주택 탐색 프로젝트</p>
+              </div>
               <p>
                 A 70-home middle-housing proposal in Sinsa-dong, Gwanak-gu that
                 connects homes, alleys, the local market, and shared spaces through
