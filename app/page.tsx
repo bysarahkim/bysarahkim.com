@@ -188,19 +188,45 @@ export default function Home() {
             <h2 id="projects-title">Projects</h2>
             <p>Research, design explorations, and collaborative work.</p>
           </div>
-          <div className="project-card" aria-label="Middle Housing Competition project">
-            <div className="project-visual" aria-hidden="true">
-              <span /><span /><span /><span /><span />
-            </div>
+          <article className="project-card" aria-label="Weave House Middle Housing Competition project">
+            <a
+              className="project-visual"
+              href="/projects/middle-housing/weave-house-korean.pdf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View the Korean Weave House competition panel PDF"
+            >
+              <img
+                src="/projects/middle-housing/weave-house-panel.png"
+                alt="Weave House competition panel showing its housing proposal, site, programs, and unit mix"
+              />
+            </a>
             <div className="project-copy">
-              <span className="project-type">Design competition · Middle housing</span>
-              <h3>Middle Housing Competition</h3>
+              <span className="project-type">Middle Housing Competition · 2026</span>
+              <h3>Weave House</h3>
+              <p className="project-subtitle">Mix + Connect</p>
               <p>
-                A dedicated space for the proposal, drawings, research, and design
-                process. Project materials will be added here.
+                A 70-home middle-housing proposal in Sinsa-dong, Gwanak-gu that
+                connects homes, alleys, the local market, and shared spaces through
+                a cooperative model for more stable and sociable urban living.
               </p>
+              <div className="project-actions">
+                <a
+                  className="project-action"
+                  href="/projects/middle-housing/weave-house-korean.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>Korean version</span>
+                  <span>View panel →</span>
+                </a>
+                <div className="project-action project-action-disabled">
+                  <span>English version</span>
+                  <span>To be continued</span>
+                </div>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
