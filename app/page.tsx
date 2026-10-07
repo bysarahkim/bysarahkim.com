@@ -115,8 +115,8 @@ export default function Home() {
             <h2 id="about-title">Researching how housing shapes social life.</h2>
             <dl className="about-facts">
               <div><dt>Based in</dt><dd>New York City</dd></div>
-              <div><dt>Education</dt><dd>MS Urban Planning, Columbia GSAPP</dd></div>
-              <div><dt>Focus</dt><dd>Housing, inequality, and urban change</dd></div>
+              <div><dt>Education</dt><dd>MS Urban Planning, Columbia GSAPP<br />BA Urban Social Management, Yokohama National University</dd></div>
+              <div><dt>Focus</dt><dd>Housing, social stratification, inequality, gentrification, urban change</dd></div>
             </dl>
           </div>
           <div className="prose about-copy">
