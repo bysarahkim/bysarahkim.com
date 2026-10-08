@@ -41,15 +41,15 @@ export default function DevelopmentForThePublic() {
           Sarah Kim
         </a>
         <nav aria-label="Essay navigation">
-          <a href="/#writing">Writing</a>
+          <a href="/#research">Research</a>
           <a href="#references">References</a>
         </nav>
       </header>
 
       <article>
         <header className="essay-hero">
-          <a className="back-link" href="/#writing">
-            <span aria-hidden="true">←</span> All writing
+          <a className="back-link" href="/#research">
+            <span aria-hidden="true">←</span> All research &amp; writing
           </a>
           <p className="eyebrow">Essay · Gentrification and displacement · 2026</p>
           <h1>Development for the Public?</h1>
@@ -575,9 +575,9 @@ export default function DevelopmentForThePublic() {
       <footer className="essay-footer">
         <div>
           <p className="footer-kicker">Continue reading</p>
-          <p>More essays and research notes will be added over time.</p>
+          <p>Explore research on housing, displacement, and urban change.</p>
         </div>
-        <a href="/#writing">Return to writing <span aria-hidden="true">→</span></a>
+        <a href="/#research">Return to research <span aria-hidden="true">→</span></a>
         <p className="copyright">© {new Date().getFullYear()} Sarah Kim</p>
       </footer>
     </main>

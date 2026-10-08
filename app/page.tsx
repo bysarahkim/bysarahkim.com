@@ -1,7 +1,11 @@
+// Set this to an existing public PDF path or CV page when one is available.
+const cvHref: string | null = null;
+
 const sections = [
-  { label: "About Sarah", href: "#about" },
-  { label: "Writing", href: "#writing" },
+  { label: "About", href: "#about" },
+  { label: "Research", href: "#research" },
   { label: "Projects", href: "#projects" },
+  ...(cvHref ? [{ label: "CV", href: cvHref }] : []),
   { label: "Photography", href: "#photography" },
 ];
 
@@ -19,22 +23,10 @@ const writingItems = [
     pdf: false,
   },
   {
-    title: "Closed Conversation: Woven City — Is It a City?",
-    meta: "Research essay · Fall 2025",
-    description:
-      "A critical reading of Toyota Woven City as a corporate-led smart-city testbed, examining data solutionism, AI urbanism, private governance, and its separation from the civic life around it.",
-    image: "/writing/library/closed-conversation-woven-city.png",
-    imagePosition: "center 31%",
-    alt: "First page of Closed Conversation featuring Toyota Woven City beneath Mount Fuji",
-    href: "/writing/library/closed-conversation-woven-city.pdf",
-    action: "View PDF",
-    pdf: true,
-  },
-  {
     title: "Mapping Displacement and Gentrification",
     meta: "Collaborative research · Spring 2025",
     description:
-      "A machine-learning approach to classifying displacement patterns across Brooklyn, combining clustering and predictive models with Peter Marcuse’s typology of urban displacement.",
+      "A mixed-methods-informed computational study of gentrification and displacement across Brooklyn, combining Marcuse’s displacement framework with ACS data, clustering, supervised machine learning, and SHAP-based interpretation to examine which neighborhood changes are most associated with displacement patterns.",
     image: "/writing/library/mapping-displacement-and-gentrification-feature.png",
     imagePosition: "center 78%",
     alt: "K-means clustering map showing displacement patterns across Brooklyn",
@@ -53,6 +45,18 @@ const writingItems = [
     href: "https://blog.naver.com/insight9411/223857710652",
     action: "Read essay",
     pdf: false,
+  },
+  {
+    title: "Reconstructing the Nation and Modernizing Society",
+    meta: "Historical research · 2024",
+    description:
+      "A study of government-led housing during South Korea’s first Five-Year Economic Development Plan and its lasting effects on modernization, middle-class identity, and Seoul’s urban form.",
+    image: "/writing/library/reconstructing-the-nation-feature.png",
+    imagePosition: "center 67%",
+    alt: "Seoul skyline filled with high-rise apartment complexes",
+    href: "/writing/library/reconstructing-the-nation.pdf",
+    action: "View PDF",
+    pdf: true,
   },
   {
     title: "Gentrification in Williamsburg",
@@ -79,14 +83,14 @@ const writingItems = [
     pdf: true,
   },
   {
-    title: "Reconstructing the Nation and Modernizing Society",
-    meta: "Historical research · 2024",
+    title: "Closed Conversation: Woven City — Is It a City?",
+    meta: "Research essay · Fall 2025",
     description:
-      "A study of government-led housing during South Korea’s first Five-Year Economic Development Plan and its lasting effects on modernization, middle-class identity, and Seoul’s urban form.",
-    image: "/writing/library/reconstructing-the-nation-feature.png",
-    imagePosition: "center 67%",
-    alt: "Seoul skyline filled with high-rise apartment complexes",
-    href: "/writing/library/reconstructing-the-nation.pdf",
+      "A critical reading of Toyota Woven City as a corporate-led smart-city testbed, examining data solutionism, AI urbanism, private governance, and its separation from the civic life around it.",
+    image: "/writing/library/closed-conversation-woven-city.png",
+    imagePosition: "center 31%",
+    alt: "First page of Closed Conversation featuring Toyota Woven City beneath Mount Fuji",
+    href: "/writing/library/closed-conversation-woven-city.pdf",
     action: "View PDF",
     pdf: true,
   },
@@ -116,41 +120,72 @@ export default function Home() {
             <dl className="about-facts">
               <div><dt>Based in</dt><dd>New York City</dd></div>
               <div><dt>Education</dt><dd>MS Urban Planning, Columbia GSAPP<br />BA Urban Social Management, Yokohama National University</dd></div>
-              <div><dt>Focus</dt><dd>Housing, social stratification, inequality, gentrification, urban change</dd></div>
+              <div><dt>Focus</dt><dd>Housing · Social stratification · Housing stigma · Displacement · Urban change</dd></div>
+              <div><dt>Methods</dt><dd>Qualitative interviews · Spatial analysis · Computational methods · Historical research · Digital discourse analysis</dd></div>
             </dl>
           </div>
           <div className="prose about-copy">
             <p>
-              I am Sarah Kim, an urban researcher whose work examines how housing
-              systems produce social stratification, class identity, and unequal
-              experiences of belonging. I earned a Master of Science in Urban
-              Planning from Columbia University’s Graduate School of Architecture,
-              Planning and Preservation.
+              I am Sarah Kim, an urban researcher studying how housing systems shape
+              social stratification, class identity, and unequal experiences of belonging.
+              I earned a Master of Science in Urban Planning from Columbia University’s
+              Graduate School of Architecture, Planning and Preservation.
             </p>
             <p>
-              My research focuses on Seoul and brings together qualitative interviews,
-              spatial analysis, and digital discourse analysis. My master’s thesis,
-              <i> Beyond Shelter</i>, studied Korean apartment complexes as both
-              material housing and a symbolic mechanism through which middle-class
-              identity and social inequality are produced.
+              My research focuses on the relationship between housing, social hierarchy,
+              and urban inequality, with South Korea as an important empirical context.
+              My master’s thesis, Beyond Shelter, examined how Korean apartment complexes
+              developed from a state-led housing solution into both a material infrastructure
+              of middle-class formation and a symbolic marker of social status.
             </p>
             <p>
-              Alongside research, I have worked across public-sector capital planning,
-              cultural programming, and large-scale energy projects. These experiences
-              shape my interest in the institutions, policies, and everyday relationships
-              through which cities are built—and in how they might serve more people.
+              My emerging research agenda examines housing-based stigma: how housing
+              types and housing systems acquire social meanings, how these meanings
+              shape class perception and everyday experience, and how symbolic and
+              material inequalities are reproduced through redevelopment, housing policy,
+              and urban change.
+            </p>
+            <p>
+              Methodologically, I combine qualitative interviews and attention to lived
+              experience with spatial and computational analysis, historical inquiry,
+              and digital discourse analysis. I am particularly interested in approaches
+              that connect macro-level patterns and institutional structures with
+              experiences that cannot be reduced to quantitative indicators alone.
+            </p>
+            <p>
+              Before and alongside my academic work, I have worked across public-sector
+              capital planning, large-scale energy projects, and cultural programming.
+              These experiences inform my interest in the institutions, policies, and
+              everyday relationships through which cities are produced.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section" id="writing" aria-labelledby="writing-title">
-        <div className="section-index">02 / Writing</div>
+      <section className="section" id="research" aria-labelledby="research-title">
+        <div className="section-index" id="writing">02 / Research</div>
         <div className="section-body">
           <div className="section-heading">
-            <h2 id="writing-title">Writing</h2>
-            <p>Essays on housing, displacement, and the politics of urban change.</p>
+            <h2 id="research-title">Research &amp; Writing</h2>
+            <p>Research on housing, inequality, displacement, and the social meanings of urban change.</p>
           </div>
+          <article className="featured-research" aria-labelledby="thesis-title">
+            <p className="eyebrow">Master’s Thesis · Columbia University · 2026</p>
+            <h3 id="thesis-title">
+              Beyond Shelter:
+              <span>The Role of Korean Apartment Complexes in Middle-Class Identity and Social Stratification in Seoul</span>
+            </h3>
+            <p className="thesis-advisor">Advisor: Tom Slater</p>
+            <div className="prose">
+              <p>This study examines how South Korea’s apartment-centered housing system became intertwined with middle-class identity and social stratification. Connecting the history of state-led apartment development with housing financialization, spatial inequality, and the contemporary stigmatization of non-apartment housing, the research asks how a housing type can become both a material asset and a symbolic marker of class position.</p>
+            </div>
+            <dl className="thesis-methods">
+              <div>
+                <dt>Methods</dt>
+                <dd>Historical analysis · Semi-structured interviews · Spatial analysis · Housing transaction data · Online search-trend analysis</dd>
+              </div>
+            </dl>
+          </article>
           <div className="writing-grid">
             {writingItems.map((item) => (
               <a
@@ -225,10 +260,6 @@ export default function Home() {
                   <span>Korean version</span>
                   <span>View panel →</span>
                 </a>
-                <div className="project-action project-action-disabled">
-                  <span>English version</span>
-                  <span>To be continued</span>
-                </div>
               </div>
             </div>
           </article>
@@ -308,10 +339,6 @@ export default function Home() {
                 >
                   View photographs <span aria-hidden="true">→</span>
                 </a>
-                <div className="photography-essay">
-                  <span>Essay</span>
-                  <p>To be continued</p>
-                </div>
               </div>
             </article>
 
@@ -343,10 +370,6 @@ export default function Home() {
                 >
                   View photographs <span aria-hidden="true">→</span>
                 </a>
-                <div className="photography-essay">
-                  <span>Essay</span>
-                  <p>To be continued</p>
-                </div>
               </div>
             </article>
           </div>
@@ -356,7 +379,8 @@ export default function Home() {
       <footer>
         <div>
           <p className="footer-kicker">Let’s keep the conversation open.</p>
-          <p>Contact details and new work will be added soon.</p>
+          <p>For research, academic collaboration, and related inquiries, please feel free to get in touch.</p>
+          {cvHref && <a className="footer-cv" href={cvHref}>CV</a>}
         </div>
         <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
         <p className="copyright">© {new Date().getFullYear()} Sarah Kim</p>
