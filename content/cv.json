@@ -1,0 +1,251 @@
+{
+  "name": "Sarah Da Yei Kim",
+  "tagline": "Urban researcher and planner | M.S. in Urban Planning, Columbia University",
+  "email": "sdk2158@columbia.edu",
+  "linkedin": "https://www.linkedin.com/in/sarah-kim-79ab9b143/",
+  "website": "https://bysarahkim.com/",
+  "pdf": "/cv/Sarah_Kim_PhD_CV_2026Oct.pdf",
+  "updated": "October 2026",
+  "sections": [
+    {
+      "id": "research-interests",
+      "title": "Research Interests",
+      "entries": [
+        {
+          "title": "",
+          "meta": "",
+          "paragraphs": [
+            "Housing systems; social stratification and inequality; stigmatization and class identity; gentrification and displacement; urban political economy; critical urban theory"
+          ],
+          "href": ""
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "entries": [
+        {
+          "title": "Columbia University, Graduate School of Architecture, Planning and Preservation",
+          "meta": "M.S. in Urban Planning, May 2026",
+          "paragraphs": [
+            "Thesis: Beyond Shelter: The Role of Korean Apartment Complexes in Middle-Class Identity and Social Stratification in Seoul. Advisor: Tom Slater. Nominated for the GSAPP Thesis/Capstone Award."
+          ],
+          "href": ""
+        },
+        {
+          "title": "Yokohama National University",
+          "meta": "B.A. in Urban Social Management, Mar 2020 | GPA: 4.077/4.5",
+          "paragraphs": [
+            "Four-year merit-based scholarship recipient; graduation thesis compared drivers of urban development in Korean and European cities."
+          ],
+          "href": ""
+        },
+        {
+          "title": "Exchange",
+          "meta": "Université Jean Moulin Lyon 3, France, Aug–Dec 2018",
+          "paragraphs": [],
+          "href": ""
+        }
+      ]
+    },
+    {
+      "id": "research-writing",
+      "title": "Selected Research and Writing",
+      "entries": [
+        {
+          "title": "Beyond Shelter: The Role of Korean Apartment Complexes in Middle-Class Identity and Social Stratification in Seoul",
+          "meta": "Master’s thesis, 2026",
+          "paragraphs": [
+            "Mixed-methods study of apartment housing as a symbolic and material mechanism of class stratification and stigmatization in Seoul, combining interviews, GIS-based spatial analysis, and digital discourse and search-trend analysis."
+          ],
+          "href": "https://academiccommons.columbia.edu/doi/10.7916/y05d-1y02"
+        },
+        {
+          "title": "Development for the Public? Gentrification and Displacement as the End of the World for Some",
+          "meta": "Research paper, 2026",
+          "paragraphs": [
+            "Examines state-led redevelopment in Seoul’s Ahyeon New Town through rent-gap theory, the revanchist city, and Peter Marcuse’s typology of displacement, focusing on displacement, renter exclusion, and the multidimensional loss of home."
+          ],
+          "href": "/writing/development-for-the-public/"
+        },
+        {
+          "title": "Mapping Displacement and Gentrification: A Machine Learning Approach to Brooklyn’s Urban Change",
+          "meta": "Group project, 2025",
+          "paragraphs": [
+            "Applied machine-learning classification models to evaluate displacement patterns in Brooklyn using Peter Marcuse’s typology of displacement."
+          ],
+          "href": "/writing/library/mapping-displacement-and-gentrification.pdf"
+        },
+        {
+          "title": "Gentrification in Williamsburg: How Rezoning Changed the Neighborhood",
+          "meta": "Research project, 2024",
+          "paragraphs": [
+            "Conducted a longitudinal GIS analysis of demographic, housing, and land-use change after the 2005 Williamsburg rezoning; selected for the 2024 GSAPP End-of-Year Show."
+          ],
+          "href": "https://www.arch.columbia.edu/student-work/13425-gentrification-in-williamsburg-how-rezoning-changed-the-neighborhood"
+        },
+        {
+          "title": "Public Rental Housing in South Korea: Stigmatization and Failure of Social Mix",
+          "meta": "Research essay, 2025",
+          "paragraphs": [
+            "Examines the stigmatization of public housing and its residents and the limitations of social-mix policies in South Korea."
+          ],
+          "href": "https://blog.naver.com/insight9411/223857710652"
+        }
+      ]
+    },
+    {
+      "id": "presentations",
+      "title": "Presentations",
+      "entries": [
+        {
+          "title": "Beyond Shelter: The Role of Korean Apartment Complexes in Middle-Class Identity and Social Stratification in Seoul",
+          "meta": "Scheduled presentation, New York Conference on Asian Studies, Oct 2026",
+          "paragraphs": [],
+          "href": ""
+        },
+        {
+          "title": "Gentrification in Williamsburg: How Rezoning Changed the Neighborhood",
+          "meta": "Oral and poster presentation, Northeast Regional Conference of KSEA, Mar 2026",
+          "paragraphs": [],
+          "href": ""
+        }
+      ]
+    },
+    {
+      "id": "awards",
+      "title": "Selected Awards",
+      "entries": [
+        {
+          "title": "Excellent Poster Award",
+          "meta": "NRC KSEA, 2026",
+          "paragraphs": [],
+          "href": ""
+        },
+        {
+          "title": "GSAPP End-of-Year Show Selection",
+          "meta": "Columbia University GSAPP, 2024",
+          "paragraphs": [],
+          "href": ""
+        },
+        {
+          "title": "CEO Award for Performance and Contribution",
+          "meta": "LG Energy Solution, 2024",
+          "paragraphs": [],
+          "href": ""
+        },
+        {
+          "title": "Full Merit-Based Scholarship",
+          "meta": "Yokohama National University, 2015–2020",
+          "paragraphs": [],
+          "href": ""
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "Professional Experience",
+      "entries": [
+        {
+          "title": "Program Coordinator",
+          "meta": "Korean Cultural Center New York | New York City | Jul 2026–Present",
+          "paragraphs": [
+            "Plan and coordinate performing arts and educational programs, including operations, community outreach, audience surveys, marketing, and program evaluation."
+          ],
+          "href": ""
+        },
+        {
+          "title": "Capital Planning Intern",
+          "meta": "New York City School Construction Authority | New York City | Jun–Dec 2025",
+          "paragraphs": [
+            "Managed public-school electrification and sustainability initiatives and supported interagency coordination, project-cost analysis, and regulatory interpretation.",
+            "Led a site review of prospective school locations in Queens, integrating site conditions, planning context, and relevant New York City local laws into recommendations."
+          ],
+          "href": ""
+        },
+        {
+          "title": "Sales and Project Manager",
+          "meta": "LG Energy Solution | Seoul, South Korea | Jul 2020–May 2024",
+          "paragraphs": [
+            "Led delivery of a $125 million turnkey battery energy storage project in California, overseeing schedules, subcontractors, project risk, and cross-functional coordination.",
+            "Closed a $600 million, 2.4 GWh grid-scale storage agreement and conducted cost, profitability, market, and policy analyses to inform strategy and partnerships."
+          ],
+          "href": ""
+        },
+        {
+          "title": "Project Assistant Intern",
+          "meta": "CityNet Secretariat | Seoul, South Korea | Jan–Mar 2019",
+          "paragraphs": [
+            "Structured Seoul public-policy cases for the Urban SDG Knowledge Platform and supported program operations and knowledge exchange among Asia-Pacific member cities."
+          ],
+          "href": ""
+        },
+        {
+          "title": "Disaster Risk Management Intern",
+          "meta": "CityNet Yokohama Office | Yokohama, Japan | May–Jul 2018",
+          "paragraphs": [
+            "Analyzed disaster-risk-reduction strategies across Korean member cities with a focus on public policy and local government administration."
+          ],
+          "href": ""
+        }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "Methods and Technical Skills",
+      "entries": [
+        {
+          "title": "Research methods",
+          "meta": "",
+          "paragraphs": [
+            "Qualitative interviews, mixed methods, spatial analysis, machine learning, digital discourse analysis"
+          ],
+          "href": ""
+        },
+        {
+          "title": "Geospatial and data",
+          "meta": "",
+          "paragraphs": [
+            "ArcGIS Pro, QGIS, R, Python"
+          ],
+          "href": ""
+        },
+        {
+          "title": "Design and web",
+          "meta": "",
+          "paragraphs": [
+            "Adobe Photoshop, InDesign, Illustrator, Figma, HTML, JavaScript"
+          ],
+          "href": ""
+        }
+      ]
+    },
+    {
+      "id": "languages-membership",
+      "title": "Languages and Membership",
+      "entries": [
+        {
+          "title": "",
+          "meta": "",
+          "paragraphs": [
+            "Korean (native) | English (near-native) | Japanese (fluent; JLPT N1) | French (basic)"
+          ],
+          "href": ""
+        },
+        {
+          "title": "American Planning Association",
+          "meta": "Member, 2026–Present",
+          "paragraphs": [],
+          "href": ""
+        },
+        {
+          "title": "The Korea Society",
+          "meta": "Member, 2025–Present",
+          "paragraphs": [],
+          "href": ""
+        }
+      ]
+    }
+  ]
+}

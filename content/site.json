@@ -1,0 +1,168 @@
+{
+  "title": "Sarah Kim — Housing, Social Stratification & Urban Research",
+  "description": "Sarah Kim is an urban researcher studying housing, social stratification, displacement, housing stigma, and urban inequality through mixed methods.",
+  "about": {
+    "headline": "Researching how housing shapes social life.",
+    "basedIn": "New York City",
+    "education": [
+      "MS Urban Planning, Columbia GSAPP",
+      "BA Urban Social Management, Yokohama National University"
+    ],
+    "focus": "Housing · Social stratification · Housing stigma · Displacement · Urban change",
+    "methods": "Qualitative interviews · Spatial analysis · Computational methods · Historical research · Digital discourse analysis",
+    "paragraphs": [
+      "I am Sarah Kim, an urban researcher studying how housing systems shape social stratification, class identity, and unequal experiences of belonging. I earned a Master of Science in Urban Planning from Columbia University’s Graduate School of Architecture, Planning and Preservation.",
+      "My research focuses on the relationship between housing, social hierarchy, and urban inequality, with South Korea as an important empirical context. My master’s thesis, Beyond Shelter, examined how Korean apartment complexes developed from a state-led housing solution into both a material infrastructure of middle-class formation and a symbolic marker of social status.",
+      "My emerging research agenda examines housing-based stigma: how housing types and housing systems acquire social meanings, how these meanings shape class perception and everyday experience, and how symbolic and material inequalities are reproduced through redevelopment, housing policy, and urban change.",
+      "Methodologically, I combine qualitative interviews and attention to lived experience with spatial and computational analysis, historical inquiry, and digital discourse analysis. I am particularly interested in approaches that connect macro-level patterns and institutional structures with experiences that cannot be reduced to quantitative indicators alone.",
+      "Before and alongside my academic work, I have worked across public-sector capital planning, large-scale energy projects, and cultural programming. These experiences inform my interest in the institutions, policies, and everyday relationships through which cities are produced."
+    ]
+  },
+  "researchDescription": "Research on housing, inequality, displacement, and the social meanings of urban change.",
+  "thesis": {
+    "meta": "Master’s Thesis · Columbia University · 2026",
+    "title": "Beyond Shelter:",
+    "subtitle": "The Role of Korean Apartment Complexes in Middle-Class Identity and Social Stratification in Seoul",
+    "advisor": "Tom Slater",
+    "description": "This study examines how South Korea’s apartment-centered housing system became intertwined with middle-class identity and social stratification. Connecting the history of state-led apartment development with housing financialization, spatial inequality, and the contemporary stigmatization of non-apartment housing, the research asks how a housing type can become both a material asset and a symbolic marker of class position.",
+    "methods": "Historical analysis · Semi-structured interviews · Spatial analysis · Housing transaction data · Online search-trend analysis",
+    "href": "https://academiccommons.columbia.edu/doi/10.7916/y05d-1y02"
+  },
+  "writing": [
+    {
+      "title": "Development for the Public? Gentrification and Displacement as the End of the World for Some",
+      "meta": "Essay · Spring 2026",
+      "description": "An examination of state-led redevelopment in Seoul’s Ahyeon New Town through rent-gap theory and the revanchist city, tracing displacement, renter exclusion, and the multidimensional loss of home.",
+      "image": "/writing/development-for-the-public/ahyeon-new-town-aerial.gif",
+      "imagePosition": "center",
+      "alt": "Aerial view outlining the Ahyeon New Town redevelopment area in Seoul",
+      "href": "/writing/development-for-the-public/",
+      "action": "Read essay",
+      "pdf": false
+    },
+    {
+      "title": "Mapping Displacement and Gentrification: A Machine Learning Approach to Brooklyn’s Urban Change",
+      "meta": "Collaborative research · Spring 2025",
+      "description": "A mixed-methods-informed computational study of gentrification and displacement across Brooklyn, combining Marcuse’s displacement framework with ACS data, clustering, supervised machine learning, and SHAP-based interpretation to examine which neighborhood changes are most associated with displacement patterns.",
+      "image": "/writing/library/mapping-displacement-and-gentrification-feature.png",
+      "imagePosition": "center 78%",
+      "alt": "K-means clustering map showing displacement patterns across Brooklyn",
+      "href": "/writing/library/mapping-displacement-and-gentrification.pdf",
+      "action": "View PDF",
+      "pdf": true
+    },
+    {
+      "title": "Public Rental Housing in South Korea: Stigmatization and Failure of Social Mix",
+      "meta": "Essay · May 2025",
+      "description": "A personal and critical examination of how public rental housing is stigmatized in South Korea, and why social-mix policies struggle to undo housing-based status hierarchies.",
+      "image": "/writing/library/public-rental-housing-social-mix.png",
+      "imagePosition": "center",
+      "alt": "Dense landscape of apartment complexes in South Korea",
+      "href": "https://blog.naver.com/insight9411/223857710652",
+      "action": "Read essay",
+      "pdf": false
+    },
+    {
+      "title": "Reconstructing the Nation and Modernizing Society: The Socio-Cultural Impact of the Government-Led Housing Plan During South Korea’s Five-Year Plans (1962–1966) in Modern-Day Seoul",
+      "meta": "Historical research · 2024",
+      "description": "A study of government-led housing during South Korea’s first Five-Year Economic Development Plan and its lasting effects on modernization, middle-class identity, and Seoul’s urban form.",
+      "image": "/writing/library/reconstructing-the-nation-feature.png",
+      "imagePosition": "center 67%",
+      "alt": "Seoul skyline filled with high-rise apartment complexes",
+      "href": "/writing/library/reconstructing-the-nation.pdf",
+      "action": "View PDF",
+      "pdf": true
+    },
+    {
+      "title": "Gentrification in Williamsburg: How Rezoning Changed the Neighborhood",
+      "meta": "GIS research · Fall 2024",
+      "description": "A longitudinal GIS analysis of how the 2005 Greenpoint–Williamsburg rezoning reshaped land use, housing, population, income, and employment across the neighborhood.",
+      "image": "/writing/library/rezoning-in-williamsburg.png",
+      "imagePosition": "center 62%",
+      "alt": "Cover of Gentrification in Williamsburg featuring the Williamsburg Bridge",
+      "href": "/writing/library/rezoning-in-williamsburg.pdf",
+      "action": "View PDF",
+      "pdf": true
+    },
+    {
+      "title": "Privatopia and Local Government: Comparison between Role of Homeowners Associations (HOA) in the United States and Apartment Complex Community in South Korea",
+      "meta": "Comparative research · Fall 2024",
+      "description": "A comparison of homeowners associations in the United States and apartment-complex communities in South Korea, focusing on private governance and relationships with local government.",
+      "image": "/writing/library/privatopia-and-local-government-feature.png",
+      "imagePosition": "center 35%",
+      "alt": "Historic aerial view of the Mapo Apartment complex in Seoul",
+      "href": "/writing/library/privatopia-and-local-government.pdf",
+      "action": "View PDF",
+      "pdf": true
+    },
+    {
+      "title": "Closed Conversation: Woven City – Is It a City?",
+      "meta": "Research essay · Fall 2025",
+      "description": "A critical reading of Toyota Woven City as a corporate-led smart-city testbed, examining data solutionism, AI urbanism, private governance, and its separation from the civic life around it.",
+      "image": "/writing/library/closed-conversation-woven-city.png",
+      "imagePosition": "center 31%",
+      "alt": "First page of Closed Conversation featuring Toyota Woven City beneath Mount Fuji",
+      "href": "/writing/library/closed-conversation-woven-city.pdf",
+      "action": "View PDF",
+      "pdf": true
+    }
+  ],
+  "projectsDescription": "Research, design explorations, and collaborative work.",
+  "projects": [
+    {
+      "title": "Weave House",
+      "subtitle": "Mix + Connect",
+      "meta": "Group project · 2026",
+      "image": "/projects/middle-housing/weave-house-panel.png",
+      "alt": "Weave House competition panel showing its housing proposal, site, programs, and unit mix",
+      "credits": [
+        "With Jun Seo Yoon and Kania Attaya Ulfa",
+        "새건축사협회 중간주택 탐색 프로젝트"
+      ],
+      "description": "A 70-home middle-housing proposal in Sinsa-dong, Gwanak-gu that connects homes, alleys, the local market, and shared spaces through a cooperative model for more stable and sociable urban living.",
+      "href": "/projects/middle-housing/weave-house-korean.pdf",
+      "linkLabel": "Korean version",
+      "action": "View panel"
+    },
+    {
+      "title": "Tokyo Yoyogi",
+      "subtitle": "Zoning, planning law, and neighborhood form",
+      "meta": "Individual project · Fall 2025",
+      "image": "/projects/yoyogi-zoning/yoyogi-zoning-impact.png",
+      "alt": "Yoyogi aerial analysis comparing floor-area ratios and height limits across two residential zones",
+      "credits": [
+        "Practicum: Residential Planning (Fall 2025)",
+        "Advisor: Katherine Dunham"
+      ],
+      "description": "How zoning and planning law in Tokyo shaped neighborhoods in Tokyo.",
+      "href": "/projects/yoyogi-zoning/yoyogi-zoning-case-study.pdf",
+      "linkLabel": "Full case study",
+      "action": "View PDF"
+    }
+  ],
+  "photographyDescription": "Architectural studies through light, material, and everyday use.",
+  "photography": [
+    {
+      "title": "Whitney Museum of American Art",
+      "location": "New York City",
+      "meta": "Assignment 01",
+      "date": "Fall 2025",
+      "image": "/photography/whitney-museum.png",
+      "alt": "Street-level view of the Whitney Museum of American Art",
+      "href": "/photography/whitney-museum-photography.pdf"
+    },
+    {
+      "title": "Domino Sugar Refinery",
+      "location": "Brooklyn, New York",
+      "meta": "Assignment 02",
+      "date": "Fall 2025",
+      "image": "/photography/domino-sugar.png",
+      "alt": "Historic Domino Sugar sign above the brick refinery building",
+      "href": "/photography/domino-sugar-photography.pdf"
+    }
+  ],
+  "footer": {
+    "headline": "Let’s keep the conversation open.",
+    "description": "For research, academic collaboration, and related inquiries, please feel free to get in touch."
+  }
+}

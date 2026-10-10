@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Development for the Public? — Sarah Kim",
+  title: "Development for the Public? Gentrification and Displacement as the End of the World for Some — Sarah Kim",
   description:
     "An essay on redevelopment-led gentrification, displacement, and the meaning of home in Seoul’s Ahyeon New Town.",
   alternates: {
@@ -54,7 +54,7 @@ export default function DevelopmentForThePublic() {
           <p className="eyebrow">Essay · Gentrification and displacement · 2026</p>
           <h1>Development for the Public?</h1>
           <p className="essay-subtitle">
-            Gentrification and displacement as the end of the world for some
+            Gentrification and Displacement as the End of the World for Some
           </p>
           <div className="essay-byline">
             <span>Sarah Kim</span>

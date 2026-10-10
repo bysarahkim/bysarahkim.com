@@ -198,6 +198,7 @@ h2 {
 .thesis-methods { max-width: 780px; margin: 28px 0 0; }
 .thesis-methods dt { margin-bottom: 8px; color: var(--terracotta); }
 .thesis-methods dd { margin: 0; color: var(--taupe); }
+.thesis-link { display: inline-block; margin-top: 28px; border-bottom: 1px solid var(--terracotta); padding-bottom: 4px; }
 
 .project-card {
   display: grid;
@@ -254,7 +255,46 @@ footer {
 footer p { margin-bottom: 0; }
 footer > a { border-bottom: 1px solid #d58d7c; padding-bottom: 3px; }
 .footer-cv { display: inline-block; margin-top: 18px; border-bottom: 1px solid #d58d7c; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 18px; }
+.footer-links a { border-bottom: 1px solid #d58d7c; }
+.degree-line { display: block; }
 .copyright { grid-column: 1 / -1; margin-top: 56px; color: #a7a7a2; font-size: 0.75rem; }
+
+/* Web CV uses the site's existing editorial type and rules. */
+.cv-hero, .cv-layout { width: min(1180px, calc(100% - 80px)); margin: 0 auto; }
+.cv-hero { padding: 80px 0 64px; border-bottom: 1px solid var(--rule); }
+.cv-hero .eyebrow { margin-bottom: 28px; }
+.cv-tagline { margin: 30px 0 18px; max-width: 740px; color: var(--taupe); }
+.cv-contact { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+.cv-contact a, .cv-entry h3 a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.cv-layout { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 72px; padding: 64px 0 100px; }
+.cv-index { display: flex; flex-direction: column; gap: 18px; align-self: start; position: sticky; top: 30px; }
+.cv-index a { line-height: 1.6; }
+.cv-section { scroll-margin-top: 32px; }
+.cv-section + .cv-section { margin-top: 64px; border-top: 1px solid var(--rule); padding-top: 42px; }
+.cv-section h2 { font-size: clamp(1.8rem, 2.8vw, 2.7rem); margin-bottom: 30px; }
+.cv-entry + .cv-entry { margin-top: 28px; }
+.cv-entry h3 { font-size: 1.08rem; font-weight: 600; line-height: 1.5; margin-bottom: 7px; }
+.cv-entry p { margin: 10px 0 0; color: #3f3f3c; }
+.cv-entry .cv-meta { color: var(--taupe); margin-top: 0; }
+.cv-contact a, .cv-entry { overflow-wrap: anywhere; }
+
+@media (max-width: 900px) {
+  .cv-hero, .cv-layout { width: calc(100% - 40px); }
+  .cv-layout { grid-template-columns: 1fr; gap: 46px; }
+  .cv-index { position: static; flex-direction: row; flex-wrap: wrap; gap: 14px 24px; }
+}
+@media (max-width: 620px) {
+  .cv-hero { padding: 56px 0 46px; }
+  .cv-layout { padding: 42px 0 72px; }
+  .cv-index { justify-content: flex-start; }
+}
+@media print {
+  .cv-page .site-header, .cv-page footer, .cv-index, .cv-hero .thesis-link { display: none; }
+  .cv-hero, .cv-layout { width: 100%; padding: 24px 0; }
+  .cv-layout { display: block; }
+  .cv-entry { break-inside: avoid; }
+}
 
 /* Long-form writing */
 .essay-page { overflow: visible; }

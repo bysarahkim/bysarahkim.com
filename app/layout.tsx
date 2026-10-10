@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import site from "../content/site.json";
 
-const title = "Sarah Kim — Housing, Social Stratification & Urban Research";
-const description =
-  "Sarah Kim is an urban researcher studying housing, social stratification, displacement, housing stigma, and urban inequality through mixed methods.";
+const { title, description } = site;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bysarahkim.com"),
