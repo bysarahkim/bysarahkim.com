@@ -1,0 +1,468 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "bysarahkim/bysarahkim.com",
+    "branch": "main",
+    "site_domain": "bysarahkim.com",
+    "auth_endpoint": "auth"
+  },
+  "site_url": "https://bysarahkim.com",
+  "display_url": "https://bysarahkim.com",
+  "media_folder": "public/uploads",
+  "public_folder": "/uploads",
+  "slug": {
+    "encoding": "ascii",
+    "clean_accents": true,
+    "sanitize_replacement": "-"
+  },
+  "collections": [
+    {
+      "name": "portfolio",
+      "label": "Website / 웹사이트",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "homepage",
+          "label": "Homepage / 홈페이지",
+          "file": "content/site.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Browser title / 페이지 제목",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Search description / 검색 설명",
+              "widget": "text"
+            },
+            {
+              "name": "about",
+              "label": "About / 소개",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "headline",
+                  "label": "Headline / 큰 제목",
+                  "widget": "string"
+                },
+                {
+                  "name": "basedIn",
+                  "label": "Based in / 거주지",
+                  "widget": "string"
+                },
+                {
+                  "name": "education",
+                  "label": "Education / 학력",
+                  "widget": "list",
+                  "field": {
+                    "name": "text",
+                    "label": "Text",
+                    "widget": "text"
+                  },
+                  "allow_add": true
+                },
+                {
+                  "name": "focus",
+                  "label": "Focus / 관심 분야",
+                  "widget": "text"
+                },
+                {
+                  "name": "methods",
+                  "label": "Methods / 연구 방법",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraphs",
+                  "label": "About paragraphs / 소개 문단",
+                  "widget": "list",
+                  "field": {
+                    "name": "text",
+                    "label": "Text",
+                    "widget": "text"
+                  },
+                  "allow_add": true
+                }
+              ]
+            },
+            {
+              "name": "researchDescription",
+              "label": "Research section description",
+              "widget": "text"
+            },
+            {
+              "name": "thesis",
+              "label": "Featured thesis / 대표 논문",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "meta",
+                  "label": "Institution and year",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Short title",
+                  "widget": "string"
+                },
+                {
+                  "name": "subtitle",
+                  "label": "Full subtitle",
+                  "widget": "text"
+                },
+                {
+                  "name": "advisor",
+                  "label": "Advisor",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "methods",
+                  "label": "Methods",
+                  "widget": "text"
+                },
+                {
+                  "name": "href",
+                  "label": "Thesis link",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": [
+                    "^(https://[^\\s]+|/[^\\s]*)?$",
+                    "Use an https:// URL or a path beginning with /"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "writing",
+              "label": "Research & Writing / 연구 목록",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "meta",
+                  "label": "Type and date",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "image",
+                  "label": "Cover image",
+                  "widget": "image"
+                },
+                {
+                  "name": "imagePosition",
+                  "label": "Image position",
+                  "widget": "string"
+                },
+                {
+                  "name": "alt",
+                  "label": "Image description for accessibility",
+                  "widget": "text"
+                },
+                {
+                  "name": "href",
+                  "label": "Research link",
+                  "widget": "string",
+                  "required": true,
+                  "pattern": [
+                    "^(https://[^\\s]+|/[^\\s]*)?$",
+                    "Use an https:// URL or a path beginning with /"
+                  ]
+                },
+                {
+                  "name": "action",
+                  "label": "Link label",
+                  "widget": "string"
+                },
+                {
+                  "name": "pdf",
+                  "label": "Opens a PDF",
+                  "widget": "boolean",
+                  "default": false
+                }
+              ],
+              "summary": "{{fields.title}}"
+            },
+            {
+              "name": "projectsDescription",
+              "label": "Projects section description",
+              "widget": "text"
+            },
+            {
+              "name": "projects",
+              "label": "Projects / 프로젝트",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "subtitle",
+                  "label": "Subtitle",
+                  "widget": "string"
+                },
+                {
+                  "name": "meta",
+                  "label": "Type and year",
+                  "widget": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image"
+                },
+                {
+                  "name": "alt",
+                  "label": "Image description for accessibility",
+                  "widget": "text"
+                },
+                {
+                  "name": "credits",
+                  "label": "Credits",
+                  "widget": "list",
+                  "field": {
+                    "name": "text",
+                    "label": "Text",
+                    "widget": "text"
+                  },
+                  "allow_add": true
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "href",
+                  "label": "Project link",
+                  "widget": "string",
+                  "required": true,
+                  "pattern": [
+                    "^(https://[^\\s]+|/[^\\s]*)?$",
+                    "Use an https:// URL or a path beginning with /"
+                  ]
+                },
+                {
+                  "name": "linkLabel",
+                  "label": "Link label",
+                  "widget": "string"
+                },
+                {
+                  "name": "action",
+                  "label": "Link action",
+                  "widget": "string"
+                }
+              ],
+              "summary": "{{fields.title}}"
+            },
+            {
+              "name": "photographyDescription",
+              "label": "Photography section description",
+              "widget": "text"
+            },
+            {
+              "name": "photography",
+              "label": "Photography / 사진",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "location",
+                  "label": "Location",
+                  "widget": "string"
+                },
+                {
+                  "name": "meta",
+                  "label": "Series / assignment",
+                  "widget": "string"
+                },
+                {
+                  "name": "date",
+                  "label": "Date",
+                  "widget": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Cover photo",
+                  "widget": "image"
+                },
+                {
+                  "name": "alt",
+                  "label": "Image description for accessibility",
+                  "widget": "text"
+                },
+                {
+                  "name": "href",
+                  "label": "Portfolio PDF link",
+                  "widget": "string",
+                  "required": true,
+                  "pattern": [
+                    "^(https://[^\\s]+|/[^\\s]*)?$",
+                    "Use an https:// URL or a path beginning with /"
+                  ]
+                }
+              ],
+              "summary": "{{fields.title}}"
+            },
+            {
+              "name": "footer",
+              "label": "Footer / 연락처 안내",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "headline",
+                  "label": "Headline",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cv",
+          "label": "CV / 이력서",
+          "file": "content/cv.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Full name",
+              "widget": "string"
+            },
+            {
+              "name": "tagline",
+              "label": "Professional summary",
+              "widget": "string"
+            },
+            {
+              "name": "email",
+              "label": "Email",
+              "widget": "string"
+            },
+            {
+              "name": "linkedin",
+              "label": "LinkedIn",
+              "widget": "string",
+              "required": true,
+              "pattern": [
+                "^(https://[^\\s]+|/[^\\s]*)?$",
+                "Use an https:// URL or a path beginning with /"
+              ]
+            },
+            {
+              "name": "website",
+              "label": "Website",
+              "widget": "string",
+              "required": true,
+              "pattern": [
+                "^(https://[^\\s]+|/[^\\s]*)?$",
+                "Use an https:// URL or a path beginning with /"
+              ]
+            },
+            {
+              "name": "pdf",
+              "label": "Downloadable CV PDF",
+              "widget": "file"
+            },
+            {
+              "name": "updated",
+              "label": "Edition / 업데이트 표기",
+              "widget": "string"
+            },
+            {
+              "name": "sections",
+              "label": "CV sections / CV 항목",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Section link ID",
+                  "widget": "string",
+                  "pattern": [
+                    "^[a-z][a-z0-9-]*$",
+                    "Use lowercase letters, numbers, and hyphens"
+                  ],
+                  "hint": "Keep existing IDs to preserve saved links."
+                },
+                {
+                  "name": "title",
+                  "label": "Section title",
+                  "widget": "string"
+                },
+                {
+                  "name": "entries",
+                  "label": "Entries / 경력·내용",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "meta",
+                      "label": "Institution / date / details",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "paragraphs",
+                      "label": "Description paragraphs",
+                      "widget": "list",
+                      "field": {
+                        "name": "text",
+                        "label": "Text",
+                        "widget": "text"
+                      },
+                      "allow_add": true
+                    },
+                    {
+                      "name": "href",
+                      "label": "Related link",
+                      "widget": "string",
+                      "required": false,
+                      "pattern": [
+                        "^(https://[^\\s]+|/[^\\s]*)?$",
+                        "Use an https:// URL or a path beginning with /"
+                      ]
+                    }
+                  ],
+                  "summary": "{{fields.title}}"
+                }
+              ],
+              "summary": "{{fields.title}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
