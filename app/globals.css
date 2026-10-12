@@ -166,7 +166,7 @@ h2 {
 .writing-card:hover .writing-card-image img { transform: scale(1.02); filter: grayscale(25%); }
 .writing-card-type { position: absolute; left: 20px; bottom: 20px; padding: 8px 11px; background: var(--paper); color: var(--terracotta); }
 .writing-card-copy { padding: 26px 0 0; border-top: 1px solid var(--ink); }
-.writing-card h3 { margin: 0; font-family: var(--serif); font-size: clamp(2rem, 3vw, 3.4rem); line-height: 1.05; font-weight: 400; }
+.writing-card h3 { margin: 0; font-family: var(--serif); font-size: clamp(1.4rem, 2.1vw, 2.38rem); line-height: 1.05; font-weight: 400; }
 .writing-card p { max-width: 620px; margin: 20px 0 26px; color: var(--taupe); }
 .writing-card-link { color: var(--terracotta); }
 
@@ -181,7 +181,7 @@ h2 {
   max-width: 980px;
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(2.8rem, 5vw, 5.2rem);
+  font-size: clamp(1.96rem, 3.5vw, 3.64rem);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.035em;
@@ -189,7 +189,7 @@ h2 {
 .featured-research h3 span {
   display: block;
   margin-top: 18px;
-  font-size: clamp(1.65rem, 2.8vw, 2.7rem);
+  font-size: clamp(1.155rem, 1.96vw, 1.89rem);
   line-height: 1.16;
   letter-spacing: -0.02em;
 }
@@ -323,7 +323,7 @@ footer > a { border-bottom: 1px solid #d58d7c; padding-bottom: 3px; }
 
 .essay-hero h1 {
   max-width: 1080px;
-  font-size: clamp(4.3rem, 8vw, 8rem);
+  font-size: clamp(3.01rem, 5.6vw, 5.6rem);
   line-height: 0.92;
 }
 
@@ -331,7 +331,7 @@ footer > a { border-bottom: 1px solid #d58d7c; padding-bottom: 3px; }
   max-width: 760px;
   margin: 38px 0 60px;
   font-family: var(--serif);
-  font-size: clamp(1.65rem, 3vw, 2.7rem);
+  font-size: clamp(1.155rem, 2.1vw, 1.89rem);
   line-height: 1.16;
   color: #3f3f3c;
 }
@@ -552,7 +552,7 @@ footer > a { border-bottom: 1px solid #d58d7c; padding-bottom: 3px; }
   .copyright { grid-column: auto; margin-top: 34px; }
   .essay-hero { padding: 48px 0 60px; }
   .back-link { margin-bottom: 54px; }
-  .essay-hero h1 { font-size: clamp(3.5rem, 17vw, 5rem); }
+  .essay-hero h1 { font-size: clamp(2.45rem, 11.9vw, 3.5rem); }
   .essay-subtitle { margin: 28px 0 44px; }
   .essay-byline { display: grid; gap: 8px; }
   .essay-layout { padding: 60px 0 84px; }
