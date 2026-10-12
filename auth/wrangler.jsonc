@@ -1,8 +1,14 @@
 {
   "name": "bysarahkim-cms-auth",
   "main": "worker.mjs",
-  "compatibility_date": "2026-10-08",
-  "workers_dev": true,
+  "compatibility_date": "2026-10-11",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "auth.bysarahkim.com",
+      "custom_domain": true
+    }
+  ],
   "observability": { "enabled": false },
   "vars": {
     "SITE_ORIGIN": "https://bysarahkim.com",
