@@ -84,8 +84,7 @@ export default function DevelopmentForThePublic() {
                 </p>
                 <cite>Joon-Kyung Park’s final note, quoted in Kyunghyang News, 2018</cite>
               </blockquote>
-              <p className="image-source-note">Funeral of Park from Ahyeon Reconstruction District 2, 2018. Source: Kyunghyang Shinmun.</p>
-              <p className="image-source-note">Ahyeon New Town boundary and the location of District 2. Sources: Neonet and Namuwiki.</p>
+            
 
               <p>
                 This case illustrates how gentrification in Seoul produces not
@@ -95,8 +94,6 @@ export default function DevelopmentForThePublic() {
                 that the final obstacle had been eliminated and reconstruction
                 could begin after all residents were cleared.
               </p>
-              <p className="image-source-note">Solidarity for the Liberation of the Poor demonstrating in front of Mapo District Office, December 12, 2018. Source: Global News.</p>
-
               <p>
                 In South Korea, redevelopment and reconstruction (
                 <i>jaegaebal</i> and <i>jaegeonchuk</i>) have often been
@@ -179,7 +176,6 @@ export default function DevelopmentForThePublic() {
                 physical and social fabric produces a stark contrast between the
                 existing environment and newly built developments.
               </p>
-              <p className="image-source-note">Ahyeon-dong before redevelopment and after demolition. Sources: Chosun News, Seoul News, and Dong-A Ilbo.</p>
             </section>
 
             <section id="class-struggle">
@@ -237,7 +233,6 @@ export default function DevelopmentForThePublic() {
                 narrative of “concerns over slum formation” in 2006 (Media Today,
                 2018).
               </p>
-              <p className="image-source-note">Ahyeon New Town before and after its transformation into apartment complexes. Google Street View, 2009 and 2014.</p>
             </section>
 
             <section id="losing-home">
@@ -317,12 +312,11 @@ export default function DevelopmentForThePublic() {
                 shelter, shaping their ability to remain socially and mentally
                 alive.
               </p>
-              <p className="image-source-note">A house from which Park was evicted, blocked before demolition, and forced demolition in Ahyeon District 3 in 2009. Sources: Media Today and Kyunghyang News.</p>
             </section>
 
             <section id="renters">
               <h2>Systemic Exclusion of Renters</h2>
-              <p className="image-source-note">Resistance signs in District 2 reading “Plan first, then demolish.” Source: Yonsei Chunchu.</p>
+          
 
               <p>
                 The issue of compensation for renters reveals a critical
