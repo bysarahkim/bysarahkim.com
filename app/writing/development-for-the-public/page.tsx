@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Development for the Public? Gentrification and Displacement as the End of the World for Some — Sarah Kim",
@@ -9,29 +8,6 @@ export const metadata: Metadata = {
     canonical: "/writing/development-for-the-public/",
   },
 };
-
-type FigureProps = {
-  number: number;
-  images: Array<{ src: string; alt: string }>;
-  caption: ReactNode;
-  layout?: "single" | "pair" | "mosaic";
-};
-
-function Figure({ number, images, caption, layout = "single" }: FigureProps) {
-  return (
-    <figure className={`essay-figure figure-${layout}`}>
-      <div className="figure-images">
-        {images.map((image) => (
-          <img key={image.src} src={image.src} alt={image.alt} />
-        ))}
-      </div>
-      <figcaption>
-        <span>Figure {number}</span>
-        {caption}
-      </figcaption>
-    </figure>
-  );
-}
 
 export default function DevelopmentForThePublic() {
   return (
@@ -108,33 +84,8 @@ export default function DevelopmentForThePublic() {
                 </p>
                 <cite>Joon-Kyung Park’s final note, quoted in Kyunghyang News, 2018</cite>
               </blockquote>
-
-              <Figure
-                number={1}
-                images={[
-                  {
-                    src: "/writing/development-for-the-public/park-funeral.jpeg",
-                    alt: "Mourners carrying a portrait of Joon-Kyung Park at his funeral",
-                  },
-                ]}
-                caption={<>Funeral of Park from Ahyeon Reconstruction District 2, 2018. Source: Kyunghyang Shinmun.</>}
-              />
-
-              <Figure
-                number={2}
-                layout="pair"
-                images={[
-                  {
-                    src: "/writing/development-for-the-public/ahyeon-new-town-aerial.gif",
-                    alt: "Aerial view showing the boundary of Ahyeon New Town in Seoul",
-                  },
-                  {
-                    src: "/writing/development-for-the-public/ahyeon-district-map.png",
-                    alt: "Planning map showing districts within Ahyeon New Town",
-                  },
-                ]}
-                caption={<>Ahyeon New Town boundary and the location of District 2. Sources: Neonet and Namuwiki.</>}
-              />
+              <p className="image-source-note">Funeral of Park from Ahyeon Reconstruction District 2, 2018. Source: Kyunghyang Shinmun.</p>
+              <p className="image-source-note">Ahyeon New Town boundary and the location of District 2. Sources: Neonet and Namuwiki.</p>
 
               <p>
                 This case illustrates how gentrification in Seoul produces not
@@ -144,17 +95,7 @@ export default function DevelopmentForThePublic() {
                 that the final obstacle had been eliminated and reconstruction
                 could begin after all residents were cleared.
               </p>
-
-              <Figure
-                number={3}
-                images={[
-                  {
-                    src: "/writing/development-for-the-public/solidarity-demonstration.jpeg",
-                    alt: "Housing rights demonstrators gathered outside Mapo District Office",
-                  },
-                ]}
-                caption={<>Solidarity for the Liberation of the Poor demonstrating in front of Mapo District Office, December 12, 2018. Source: Global News.</>}
-              />
+              <p className="image-source-note">Solidarity for the Liberation of the Poor demonstrating in front of Mapo District Office, December 12, 2018. Source: Global News.</p>
 
               <p>
                 In South Korea, redevelopment and reconstruction (
@@ -239,19 +180,7 @@ export default function DevelopmentForThePublic() {
                 physical and social fabric produces a stark contrast between the
                 existing environment and newly built developments.
               </p>
-
-              <Figure
-                number={4}
-                layout="mosaic"
-                images={[
-                  { src: "/writing/development-for-the-public/ahyeon-before-1.jpeg", alt: "Low-rise housing in Ahyeon-dong before redevelopment" },
-                  { src: "/writing/development-for-the-public/ahyeon-before-2.jpeg", alt: "A narrow residential street and steps in Ahyeon-dong" },
-                  { src: "/writing/development-for-the-public/ahyeon-demolition-1.jpeg", alt: "Ahyeon-dong buildings during demolition" },
-                  { src: "/writing/development-for-the-public/ahyeon-demolition-2.jpeg", alt: "Cleared redevelopment land beside remaining housing" },
-                  { src: "/writing/development-for-the-public/ahyeon-demolition-3.jpeg", alt: "Large cleared construction site in Ahyeon-dong" },
-                ]}
-                caption={<>Ahyeon-dong before redevelopment and after demolition. Sources: Chosun News, Seoul News, and Dong-A Ilbo.</>}
-              />
+              <p className="image-source-note">Ahyeon-dong before redevelopment and after demolition. Sources: Chosun News, Seoul News, and Dong-A Ilbo.</p>
             </section>
 
             <section id="class-struggle">
@@ -309,16 +238,7 @@ export default function DevelopmentForThePublic() {
                 narrative of “concerns over slum formation” in 2006 (Media Today,
                 2018).
               </p>
-
-              <Figure
-                number={5}
-                layout="pair"
-                images={[
-                  { src: "/writing/development-for-the-public/ahyeon-street-2009.png", alt: "Google Street View of Ahyeon New Town during demolition in 2009" },
-                  { src: "/writing/development-for-the-public/ahyeon-street-2014.png", alt: "Google Street View of completed high-rise apartments in Ahyeon New Town in 2014" },
-                ]}
-                caption={<>Ahyeon New Town before and after its transformation into apartment complexes. Google Street View, 2009 and 2014.</>}
-              />
+              <p className="image-source-note">Ahyeon New Town before and after its transformation into apartment complexes. Google Street View, 2009 and 2014.</p>
             </section>
 
             <section id="losing-home">
@@ -398,28 +318,12 @@ export default function DevelopmentForThePublic() {
                 shelter, shaping their ability to remain socially and mentally
                 alive.
               </p>
-
-              <Figure
-                number={6}
-                layout="pair"
-                images={[
-                  { src: "/writing/development-for-the-public/park-house.jpeg", alt: "Park’s former house blocked before demolition" },
-                  { src: "/writing/development-for-the-public/forced-demolition.jpeg", alt: "Interior of a damaged building during forced demolition in Ahyeon District 3" },
-                ]}
-                caption={<>A house from which Park was evicted, blocked before demolition, and forced demolition in Ahyeon District 3 in 2009. Sources: Media Today and Kyunghyang News.</>}
-              />
+              <p className="image-source-note">A house from which Park was evicted, blocked before demolition, and forced demolition in Ahyeon District 3 in 2009. Sources: Media Today and Kyunghyang News.</p>
             </section>
 
             <section id="renters">
               <h2>Blind Spot of Gentrification: Systemic Exclusion of Renters</h2>
-
-              <Figure
-                number={7}
-                images={[
-                  { src: "/writing/development-for-the-public/resistance-signs.jpeg", alt: "A redevelopment resistance message painted on a wall in Ahyeon District 2" },
-                ]}
-                caption={<>Resistance signs in District 2 reading “Plan first, then demolish.” Source: Yonsei Chunchu.</>}
-              />
+              <p className="image-source-note">Resistance signs in District 2 reading “Plan first, then demolish.” Source: Yonsei Chunchu.</p>
 
               <p>
                 The issue of compensation for renters reveals a critical

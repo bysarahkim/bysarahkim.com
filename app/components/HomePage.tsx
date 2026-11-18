@@ -40,7 +40,7 @@ export default function HomePage() {
             {site.writing.map((item, i) => (
               <a className="writing-card" href={item.href} key={i} aria-label={`${item.action}: ${item.title}`} target={item.pdf || item.href.startsWith("http") ? "_blank" : undefined} rel={item.pdf || item.href.startsWith("http") ? "noreferrer" : undefined}>
                 <div className="writing-card-image">
-                  <img src={item.image} alt={item.alt} style={{ objectPosition: item.imagePosition }} />
+                  {item.image && <img src={item.image} alt={item.alt} style={{ objectPosition: item.imagePosition }} />}
                   <span className="writing-card-type">{item.meta}</span>
                 </div>
                 <div className="writing-card-copy">
