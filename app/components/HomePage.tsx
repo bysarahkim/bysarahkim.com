@@ -58,13 +58,13 @@ export default function HomePage() {
           <div className="section-heading"><h2 id="projects-title">Projects</h2><p>{site.projectsDescription}</p></div>
           {site.projects.map((item, i) => (
             <article className="project-card" key={i} aria-label={`${item.title} project`}>
-              <a className="project-visual" href={item.href} target="_blank" rel="noreferrer" aria-label={`View ${item.title}`}><img src={item.image} alt={item.alt} /></a>
+              {item.href ? (<a className="project-visual" href={item.href} target="_blank" rel="noreferrer" aria-label={`View ${item.title}`}><img src={item.image} alt={item.alt} /></a>) : (<div className="project-visual"><img src={item.image} alt={item.alt} /></div>)}
               <div className="project-copy">
                 <span className="project-type">{item.meta}</span>
                 <h3>{item.title}</h3><p className="project-subtitle">{item.subtitle}</p>
                 <div className="project-credits">{item.credits.map((credit, index) => <p key={index} lang={/[가-힣]/.test(credit) ? "ko" : undefined}>{credit}</p>)}</div>
                 <p>{item.description}</p>
-                <div className="project-actions"><a className="project-action" href={item.href} target="_blank" rel="noreferrer"><span>{item.linkLabel}</span><span>{item.action} →</span></a></div>
+                {item.href && <div className="project-actions"><a className="project-action" href={item.href} target="_blank" rel="noreferrer"><span>{item.linkLabel}</span><span>{item.action} →</span></a></div>}
               </div>
             </article>
           ))}
