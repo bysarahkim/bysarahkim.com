@@ -55,10 +55,6 @@
       "title": "Public Rental Housing in South Korea: Stigmatization and Failure of Social Mix",
       "meta": "Essay · May 2025",
       "description": "A personal and critical examination of how public rental housing is stigmatized in South Korea, and why social-mix policies struggle to undo housing-based status hierarchies.",
-      "image": "/writing/library/public-rental-housing-social-mix.png",
-      "imagePosition": "center",
-      "alt": "Dense landscape of apartment complexes in South Korea",
-      "href": "https://blog.naver.com/insight9411/223857710652",
       "action": "Read essay",
       "pdf": false
     },
@@ -77,9 +73,6 @@
       "title": "Privatopia and Local Government"
       "meta": "Comparative research · Fall 2024",
       "description": "A comparison of homeowners associations in the United States and apartment-complex communities in South Korea, focusing on private governance and relationships with local government.",
-      "image": "/writing/library/privatopia-and-local-government-feature.png",
-      "imagePosition": "center 35%",
-      "alt": "Historic aerial view of the Mapo Apartment complex in Seoul",
       "href": "/writing/library/privatopia-and-local-government.pdf",
       "action": "View PDF",
       "pdf": true
@@ -102,21 +95,6 @@
       "linkLabel": "Korean version",
       "action": "View panel"
     },
-    {
-      "title": "Tokyo Yoyogi",
-      "subtitle": "Zoning, planning law, and neighborhood form",
-      "meta": "Individual project · Fall 2025",
-      "image": "/projects/yoyogi-zoning/yoyogi-zoning-impact.png",
-      "alt": "Yoyogi aerial analysis comparing floor-area ratios and height limits across two residential zones",
-      "credits": [
-        "Practicum: Residential Planning (Fall 2025)",
-        "Advisor: Katherine Dunham"
-      ],
-      "description": "How zoning and planning law in Tokyo shaped neighborhoods in Tokyo.",
-      "href": "",
-      "linkLabel": "",
-      "action": ""
-    }
   ],
   "photographyDescription": "Architectural studies through light, material, and everyday use.",
   "photography": [
