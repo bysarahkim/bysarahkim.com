@@ -108,8 +108,7 @@ export default function DevelopmentForThePublic() {
               </p>
               <p>
                 This essay examines the struggles of renters and tenants during
-                state-led gentrification in Seoul. It highlights a critical blind
-                spot in discussions of gentrification and displacement through
+                state-led gentrification in Seoul. It highlights a critical absence of renters in discussions of gentrification and displacement through
                 the cases of the Ahyeon New Town project (2003–2022) and
                 District 2, where the tragedy occurred in 2018.
               </p>
