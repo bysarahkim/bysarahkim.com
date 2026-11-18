@@ -321,7 +321,7 @@ export default function DevelopmentForThePublic() {
             </section>
 
             <section id="renters">
-              <h2>Blind Spot of Gentrification: Systemic Exclusion of Renters</h2>
+              <h2>Systemic Exclusion of Renters</h2>
               <p className="image-source-note">Resistance signs in District 2 reading “Plan first, then demolish.” Source: Yonsei Chunchu.</p>
 
               <p>
@@ -390,7 +390,7 @@ export default function DevelopmentForThePublic() {
                 middle-class wealth accumulation. Framed through the discourse of
                 public interest and national economic development, redevelopment
                 systematically privileges capital over existing communities. It
-                produces a legal, political, and administrative blind spot that
+                produces a legal, political, and administrative structure that
                 disproportionately affects tenants and risks pushing the most
                 vulnerable to the social margins.
               </p>
